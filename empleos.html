@@ -17,14 +17,16 @@
 			  DevJobs
 		</h1>
 		<nav>
-			<a href="./index.html">Inicio</a>
+			<!-- <a href="./index.html">Inicio</a> -->
 			<a href="./empleos.html">Empleos</a>
 			<a href="">Empresas</a>
 			<a href="">Salarios</a>
 		</nav>
-		<div>
-			<a href="">Publicar un empleo</a>
-			<a href="">Iniciar sesión</a>
+		<div  class="profile-info">
+			<a href="">Perfil</a>
+			<a class="profile-pic" href="" aria-label="Foto de perfil del usuario">
+				<img src="./user.png">
+			</a>
 		</div>
 	</header>
 	<main>
@@ -36,10 +38,46 @@
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
 					<input name="search" id="empleos-search-input" required type="text" placeholder="Buscar empleos por titulo, empresa, o habilidad.">
 				</div>
+				<div class="search-filters">
+					<select name="technology" id="filter-technology">
+			            <option value="">Tecnología</option>
+			            <option value="javascript">JavaScript</option>
+			            <option value="python">Python</option>
+			            <option value="react">React</option>
+			            <option value="nodejs">Node.js</option>
+			            <option value="java">Java</option>
+			            <option value="csharp">C#</option>
+			            <option value="c">C</option>
+			            <option value="c++">C++</option>
+			            <option value="ruby">Ruby</option>
+			            <option value="php">PHP</option>
+			        </select>
+					<select name="location" id="filter-location">
+						<option>Ubicacion</option>
+						<option>Presencial</option>
+						<option>Remoto</option>
+						<option>Híbrido</option>
+					</select>
+					<select name="experience-level" id="filter-experience-level">
+						<option>Nivel de experiencia</option>
+						<option>Junior</option>
+						<option>Mid</option>
+						<option>Senior</option>
+					</select>
+				</div>
 			</form>
 		</section>
 		<section class="job-listings">
-			
+			<h2>Resultados de búsqueda</h2>
+			<div class="job-listings-result">
+				<article class="job-listings-result-item">
+					<header>
+						<h3>Ingeniero de software</h3>
+						<span>HTML, JAVA</span>
+					</header>
+					<p></p>
+				</article>
+			</div>
 		</section>
 	</main>
 </body>
